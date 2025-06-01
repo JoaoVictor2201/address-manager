@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pop-up Endereço</title>
+  <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+
+<button onclick="abrirPopup()">Adicionar Endereço</button>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="popup">
+  <h2>Digite seu endereço</h2>
+  <form id="enderecoForm">
+    <label>Rua:</label><br>
+    <input type="text" id="rua" required><br><br>
+
+    <label>Cidade:</label><br>
+    <input type="text" id="cidade" required><br><br>
+
+    <label>CEP:</label><br>
+    <input type="text" id="cep" required><br><br>
+
+    <button type="submit">Enviar</button>
+    <button type="button" onclick="fecharPopup()">Cancelar</button>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="home.html">
+      <img src="assets/image.jpg" alt="" >
+    </a>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="cadastro.html" id="link-cadastro">Cadastro</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-cadastro">
+    <div class="form-container">
+      <section class="form-content">
+        <h1>Preencha seus dados no Formulário e faça seu orçamento!</h1>
+      </section>
+      <section class="form-area">
+        <form id="form-cadastro">
+          <input type="text" placeholder="Nome..." id="name">
+          <input type="email" placeholder="email@email.com" id="email">
+          <input type="password" placeholder="Senha" id="password">
+          <input type="text" placeholder="CPF / CNPJ" id="cpf-cnpj">
+          <span>Data de Nascimento</span>
+          <input type="date" id="date">
+          <div class="terms">
+            <input type="checkbox" id="terms">
+            <span>Aceito os termos de condições e uso</span>
+            <span class="terms-warning">*campo obrigratório</span>
+          </div>
+          <div class="buttons">
+            <button type="button" class="register" onclick="validarDados()">Cadastrar</button>
+            <button type="button" class="clear" class="clear" onclick="limparForm()">Limpar</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

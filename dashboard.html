@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="home.html">
+        <img src="assets/image.jpg" alt="" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="dashboard.html" id="link-dash">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-dashboard">
+      <h1>Dashboard</h1>
+      <div class="buttons">
+        <button type="button" onclick="renderAddresses()">Render</button>
+        <button type="button" onclick="adicionarEndereco()">Register</button>
+      </div>
+
+      <table id="enderecos-table">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>CEP</th>
+            <th>Endereço</th>
+            <th>Número</th>
+            <th>Complemento</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os endereços cadastrados serão inseridos aqui via JavaScript -->
+        </tbody>
+      </table>
+
+      <div id="overlay"></div>
+      <div id="popup">
+        <h2>Novo Endereço</h2>
+        <form id="formEndereco">
+          <input type="text" id="title" placeholder="Apelido"><br>
+          <input type="text" id="cep" placeholder="CEP" required><br>
+          <input type="text" id="address" placeholder="Rua" required><br>
+          <input type="text" id="number" placeholder="Número" required><br>
+          <input type="text" id="complement" placeholder="Complemento"><br><br>
+          <button type="submit" onclick="salvarOuAtualizarEndereco()">Salvar</button>
+          <button type="button" onclick="fecharPopup()">Cancelar</button>
+        </form>
+      </div>
+    </main>
+  
+    <script src="js/dashboard.js"></script>
+    <script src="js/verifyLogin.js"></script>
+  </body>
+</html>

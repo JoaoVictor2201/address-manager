@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="home.html">
+        <img src="assets/image.jpg" alt="" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="login.html" id="link-login">Login</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-login">
+      <section class="login-content">
+        <div class="form-container">
+          <h1>Login</h1>
+          <form>
+            <input type="text" placeholder="Usuário" id="login" />
+            <input type="password" placeholder="Senha" id="password-login" />
+            <button type="button" onclick="userLogin()">login</button>
+          </form>
+          <button type="button" id="logout-btn" onclick="logout()">
+            Logout
+          </button>
+        </div>
+      </section>
+      <section class="office-image"></section>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
