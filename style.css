@@ -290,7 +290,7 @@ header nav ul li a:hover {
   align-items: center;
 }
 
-#main-dashboard .logado h1{
+/* #main-dashboard .logado h1{
   margin-left: 30px;
 }
 
@@ -304,9 +304,9 @@ header nav ul li a:hover {
   color: var(--white);
   width: fit-content;
   margin-top: 10px; 
-}
+} */
 
-#main-dashboard .deslogado-fundo .deslogado__popup{
+/* #main-dashboard .deslogado-fundo .deslogado__popup{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,7 +323,7 @@ header nav ul li a:hover {
   color: var(--white);
   width: fit-content;
   margin-top: 10px; 
-}
+} */
 
 #popup {
   display: none;
@@ -366,7 +366,7 @@ header nav ul li a:hover {
 }
 
 #enderecos-table th, #enderecos-table td {
-  padding: 16px 12px;
+  padding: 20px 25px;
   text-align: left;
 }
 

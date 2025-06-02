@@ -23,7 +23,6 @@ const renderAddresses = async () => {
       <td>${endereco.cep || ""}</td>
       <td>${endereco.address || ""}</td>
       <td>${endereco.number || ""}</td>
-      <td>${endereco.complement || ""}</td>
       <td>
         <button class="action-btn edit-btn" onclick="editarEndereco('${endereco.id}')">Editar</button>
         <button class="action-btn delete-btn" onclick="excluirEndereco('${endereco.id}')">Excluir</button>
@@ -37,7 +36,6 @@ const renderAddresses = async () => {
 
 async function editarEndereco(id) {
   const address = await fetchAddress(id);
-  const address_id = address.data.id;
   abrirPopup()
   const form = document.getElementById("formEndereco");
   form.elements["title"].value = address.data.title || "";
@@ -45,12 +43,6 @@ async function editarEndereco(id) {
   form.elements["address"].value = address.data.address || "";
   form.elements["number"].value = address.data.number || "";
   form.elements["complement"].value = address.data.complement || "";
-
-  // form.addEventListener("submit", (e) => {
-  //   e.preventDefault()
-  //   atualizarEndereco(address_id, form)
-  //   }
-  // )
 }
 
 async function atualizarEndereco(id, form) {
@@ -73,6 +65,7 @@ async function atualizarEndereco(id, form) {
   if (api.ok) {
     alert("Endereço atualizado com sucesso!");
     fecharPopup()
+    clearForm();
     renderAddresses();
   } else {
     alert("Erro ao atualizar o endereço. Tente novamente.");
@@ -105,9 +98,7 @@ const adicionarEndereco = async () => {
 
 // ...existing code...
 
-async function salvarOuAtualizarEndereco(e) {
-  e.preventDefault();
-
+async function salvarOuAtualizarEndereco() {
   const form = document.getElementById("formEndereco");
   const cep = form.elements["cep"].value;
   const number = form.elements["number"].value;
@@ -119,18 +110,17 @@ async function salvarOuAtualizarEndereco(e) {
   );
 
   if (existente) {
-    // Atualiza o endereço existente
     await atualizarEndereco(existente.id, form);
+    clearForm();
   } else {
     // Cria novo endereço
     await adicionarEndereco();
+    alert("Endereço adicionado com sucesso!");
+    clearForm();
     fecharPopup();
     renderAddresses();
   }
 }
-
-// Substitua o event listener do form para usar a nova função:
-document.getElementById("formEndereco").addEventListener("submit", salvarOuAtualizarEndereco);
 
 // ...existing code...
 
