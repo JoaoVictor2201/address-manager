@@ -1,0 +1,54 @@
+@import url("common.css");
+
+#main-login {
+  display: flex;
+  height: calc(100vh - 166px);
+}
+
+#main-login .login-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#main-login .login-content .form-container {
+  padding: 50px;
+  gap: 20px;
+  background: var(--secondary);
+  min-width: 500px;
+}
+
+#main-login .login-content .form-container h1 {
+  font-size: 24px;
+}
+
+#main-login .login-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#main-login .login-content form button {
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--white);
+  width: fit-content;
+  margin-top: 10px;
+}
+
+#main-login .office-image {
+  flex: 1;
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+}
+
+#logout-btn {
+  display: none;
+} 

@@ -1,0 +1,49 @@
+@import url("common.css");
+
+#main-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#main-home .videos {
+  display: flex;
+  gap: 40px;
+}
+
+#main-home .videos video {
+  border-radius: 20px;
+}
+
+#main-home .home-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#main-home .home-content h1 {
+  font-size: 38px;
+}
+
+#main-home .home-content span {
+  font-size: 16px;
+}
+
+#main-home .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#main-home .buttons a {
+  display: block;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  border-radius: 15px;
+  color: var(--white);
+  font-size: 14px;
+} 

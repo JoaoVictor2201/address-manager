@@ -1,0 +1,76 @@
+@import url("common.css");
+
+#main-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+#main-cadastro .form-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+#main-cadastro form {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-cadastro #form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#main-cadastro #form-cadastro span {
+  display: block;
+  padding: 10px 15px 0;
+  font-size: 20px;
+  color: var(--grayscale-dark);
+}
+
+#main-cadastro #form-cadastro .terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#main-cadastro #form-cadastro .terms span {
+  padding: 0;
+  font-size: 14px;
+}
+
+#main-cadastro #form-cadastro .terms .terms-warning {
+  color: var(--primary);
+  font-weight: 700;
+  display: none;
+}
+
+#main-cadastro #form-cadastro .buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+#main-cadastro #form-cadastro .buttons button {
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#main-cadastro #form-cadastro .buttons .register {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+#main-cadastro #form-cadastro .buttons .clear {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+} 

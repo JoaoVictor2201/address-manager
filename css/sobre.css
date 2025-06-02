@@ -1,0 +1,21 @@
+@import url("common.css");
+
+#main-sobre {
+  text-align: center;
+}
+
+#main-sobre h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#main-sobre .sobre-content {
+  padding: 0 17%;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+#main-sobre .mapa {
+  margin: 0 auto;
+  max-width: 70%;
+} 
