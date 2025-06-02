@@ -19,14 +19,22 @@ Este projeto foi desenvolvido como parte do trabalho acadêmico para a disciplin
 ```
 address-manager/
 ├── assets/           # Arquivos de mídia e recursos
+├── css/             # Arquivos de estilo
+│   ├── common.css   # Estilos compartilhados
+│   ├── home.css     # Estilos da página inicial
+│   ├── login.css    # Estilos da página de login
+│   ├── cadastro.css # Estilos da página de cadastro
+│   ├── sobre.css    # Estilos da página sobre
+│   └── dashboard.css # Estilos do painel de controle
 ├── js/              # Arquivos JavaScript
-├── cadastro.html    # Página de cadastro de usuário
-├── login.html       # Página de login
-├── home.html        # Página inicial
-├── dashboard.html   # Painel de controle
-├── sobre.html       # Página sobre o projeto
-├── cadastroendereco.html  # Cadastro de endereços
-└── style.css        # Estilos do projeto
+├── html/            # Páginas HTML
+│   ├── home.html    # Página inicial
+│   ├── login.html   # Página de login
+│   ├── cadastro.html # Página de cadastro de usuário
+│   ├── sobre.html   # Página sobre o projeto
+│   ├── dashboard.html # Painel de controle
+│   └── cadastroendereco.html # Cadastro de endereços
+└── README.md        # Documentação do projeto
 ```
 
 ## 🎯 Objetivo
