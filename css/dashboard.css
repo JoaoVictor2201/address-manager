@@ -74,7 +74,7 @@
   font-size: 16px;
 }
 
-#enderecos-table td .action-btn {
+#enderecos-table td .action-btn, #main-dashboard button {
   border: none;
   border-radius: 8px;
   padding: 6px 14px;
@@ -84,24 +84,24 @@
   transition: background 0.2s, color 0.2s;
 }
 
-#enderecos-table td .edit-btn {
+#enderecos-table td .edit-btn, #main-dashboard button {
   background-color: var(--secondary);
   color: var(--primary);
   border: 1px solid var(--primary);
 }
 
-#enderecos-table td .edit-btn:hover {
+#enderecos-table td .edit-btn:hover, #main-dashboard button:hover {
   background-color: var(--primary);
   color: var(--white);
 }
 
-#enderecos-table td .delete-btn {
+#enderecos-table td .delete-btn, #main-dashboard button {
   background-color: var(--primary);
   color: var(--white);
   border: 1px solid var(--primary);
 }
 
-#enderecos-table td .delete-btn:hover {
+#enderecos-table td .delete-btn:hover, #main-dashboard button:hover {
   background-color: #b71c1c;
   border-color: #b71c1c;
 } 

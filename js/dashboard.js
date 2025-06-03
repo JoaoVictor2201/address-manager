@@ -36,7 +36,7 @@ const renderAddresses = async () => {
 
 async function editarEndereco(id) {
   const address = await fetchAddress(id);
-  abrirPopup()
+  abrirPopup("Editar Endereço")
   const form = document.getElementById("formEndereco");
   form.elements["title"].value = address.data.title || "";
   form.elements["cep"].value = address.data.cep || "";
@@ -73,7 +73,7 @@ async function atualizarEndereco(id, form) {
 }
 
 const adicionarEndereco = async () => {
-  abrirPopup()
+  abrirPopup("Novo Endereço")
   let url = "https://go-wash-api.onrender.com/api/auth/address";
   let params = {
     title: document.getElementById("title").value,
@@ -129,7 +129,7 @@ function clearForm() {
 }
 
 async function excluirEndereco(id) {
-  let url = `https://go-wash-api.onrender.com/api/auth/address/${id || ""}`;
+  let url = `https://go-wash-api.onrender.com/api/auth/address/${id}`;
   let api = await fetch(url, {
     method: "DELETE",
     headers: {
@@ -142,7 +142,8 @@ async function excluirEndereco(id) {
   }
 }
 
-function abrirPopup() {
+function abrirPopup(title) {
+  document.getElementById("popup-title").textContent = title
   document.getElementById("popup").style.display = "block"
   document.getElementById("overlay").style.display = "block"
 }
