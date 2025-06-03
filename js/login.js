@@ -1,9 +1,6 @@
 const userLogin = async () => {
-  // let login = document.getElementById("login").value
-  // let password = document.getElementById("password-login").value
-
-  let login = "franca.jv@hotmail.com";
-  let password = "Kiko@123";
+  let login = document.getElementById("login").value
+  let password = document.getElementById("password-login").value
 
   let url = "https://go-wash-api.onrender.com/api/login";
 
